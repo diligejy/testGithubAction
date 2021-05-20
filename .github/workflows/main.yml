@@ -1,0 +1,14 @@
+name : helloGithubAction
+
+on : [push]
+
+jobs:
+  build:
+    runs-on : ubuntu-latest
+    steps:
+      - name : hello world 출력
+        run : echo hello, world!
+      - name : 렉토리 력!
+        run : ls -al
+      - name : 파이썬 버전 력
+        run : python -V
